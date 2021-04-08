@@ -12,4 +12,4 @@ pip install json</br>
 1. Download the dataset from https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data and save it in a folder and name it "kaggle".</br>
 2. Unzip the files in the kaggle folder.</br>
 3. Download all the files from this repository and save them in kaggle folder.</br>
-4. Run Speech_ommand.py</br>
+4. Run Speech_command.py</br>
