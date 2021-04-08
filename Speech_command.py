@@ -27,7 +27,6 @@ def silence_dataset():
             with open(noise_path+"/silence/sil-{}-{}.wav".format(audio_file,i), "wb") as f:
                 sil.export(f, format="wav")
 
-# silence()
 
 #This block generates MFCC's for all the audio files and store them in a json file.
 #I chose json because it is fast and handy.
@@ -142,6 +141,7 @@ def testing_outputs(filepath, model):
     return commands_list[preds.argmax()]
 
 def main():
+    silence_dataset()
     final_outputs = [] 
     model = neural_nework()
     test_audio_path = "test/test/audio"
